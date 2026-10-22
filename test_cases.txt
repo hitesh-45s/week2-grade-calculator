@@ -1,0 +1,45 @@
+======================================================================
+WEEK 2: STUDENT GRADE CALCULATOR — TEST CASES & VALIDATION SUITE
+Grading Scale: A (90-100), B (80-89), C (70-79), D (60-69), F (0-59)
+======================================================================
+
+TC-01 (Sample Input - Grade B):
+  Input : Name = "Priya", Marks = 85
+  Output: Marks: 85/100 | Grade: B | Message: Very Good! Keep it up! 👍
+  Status: PASSED
+
+TC-02 (Grade A Tier):
+  Input : Name = "Hitesh", Marks = 94
+  Output: Marks: 94/100 | Grade: A | Message: Outstanding! Excellent performance—keep shining! 🌟
+  Status: PASSED
+
+TC-03 (Grade C Tier):
+  Input : Name = "Rohan", Marks = 74
+  Output: Marks: 74/100 | Grade: C | Message: Good job! With a little more practice, you can reach the top! 📈
+  Status: PASSED
+
+TC-04 (Grade D Tier):
+  Input : Name = "Ananya", Marks = 63
+  Output: Marks: 63/100 | Grade: D | Message: Fair effort! Review the key concepts and keep pushing forward! 💪
+  Status: PASSED
+
+TC-05 (Grade F Tier):
+  Input : Name = "Kabir", Marks = 45
+  Output: Marks: 45/100 | Grade: F | Message: Don't give up! Every mistake is a learning opportunity—you've got this next time! 🌱
+  Status: PASSED
+
+TC-06 (Boundary Values):
+  Marks = 0 -> Grade F | Marks = 60 -> Grade D | Marks = 70 -> Grade C | Marks = 80 -> Grade B | Marks = 90 -> Grade A | Marks = 100 -> Grade A
+  Status: PASSED
+
+TC-07 (Out-of-Range High > 100):
+  Input : 120 -> Rejected by while loop -> Re-entered 88 -> Grade B
+  Status: PASSED
+
+TC-08 (Out-of-Range Low < 0):
+  Input : -10 -> Rejected by while loop -> Re-entered 72 -> Grade C
+  Status: PASSED
+
+TC-09 (Non-Numeric Input):
+  Input : "abc" -> Caught by try-except ValueError -> Re-entered 91 -> Grade A
+  Status: PASSED
